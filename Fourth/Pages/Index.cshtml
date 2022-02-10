@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    @Model.Value
+</div>
+<a class="btn btn-primary" asp-page="Index" asp-route-value="@Model.Value">Reload</a>
+<a class="btn btn-secondary" asp-page="Index" asp-page-handler="Dec" asp-route-value="@Model.Value">Decrease</a>
+<a class="btn btn-secondary" asp-page="Index" asp-page-handler="Inc" asp-route-value="@Model.Value">Increase</a>
+
+<form method="post">
+    <input class="" type="number" asp-for="Value" />
+    <button type="submit">Submit</button>
+</form>
