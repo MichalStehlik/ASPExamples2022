@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<p>@Model.Email</p>
+@{
+    /*
+<form method="post">
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="@Model.Email">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+*/
+}
+
+<form method="post">
+   @Html.ValidationSummary()
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" asp-for="Email" aria-describedby="emailHelp">
+    <div class="text-danger">@Html.ValidationMessage("Email")</div>
+    <span asp-validation-for="Email" class="text-danger"></span>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
