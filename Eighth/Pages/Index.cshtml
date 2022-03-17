@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="alert alert-success">@Model.SuccessMessage</div>
+
+<div class="text-center">
+    <a asp-page-handler="success" asp-page="Index">Success</a>
+</div>
+
