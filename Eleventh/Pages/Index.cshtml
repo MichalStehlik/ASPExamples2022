@@ -1,0 +1,14 @@
+﻿@page
+@using Eleventh.Models
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <div>
+        <h2>Player stats</h2>
+        <p>HP: @Model.State.HP</p>
+    </div>
+    <p><a asp-page="Place" asp-route-id="@Room.Start">Begin adventure</a></p>
+</div>

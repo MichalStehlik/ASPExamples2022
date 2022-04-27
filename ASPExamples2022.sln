@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Seventh", "Seventh\Seventh.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eighth", "Eighth\Eighth.csproj", "{31721E25-EC41-4F2D-B7CF-C1D9E7EB12DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenth", "Tenth\Tenth.csproj", "{7EA2AA84-2E45-4B66-A0ED-E0B9FCF8CFE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tenth", "Tenth\Tenth.csproj", "{7EA2AA84-2E45-4B66-A0ED-E0B9FCF8CFE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eleventh", "Eleventh\Eleventh.csproj", "{A10BA6CD-4123-4323-BC39-777001F7CB0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{7EA2AA84-2E45-4B66-A0ED-E0B9FCF8CFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EA2AA84-2E45-4B66-A0ED-E0B9FCF8CFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EA2AA84-2E45-4B66-A0ED-E0B9FCF8CFE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A10BA6CD-4123-4323-BC39-777001F7CB0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10BA6CD-4123-4323-BC39-777001F7CB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10BA6CD-4123-4323-BC39-777001F7CB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10BA6CD-4123-4323-BC39-777001F7CB0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

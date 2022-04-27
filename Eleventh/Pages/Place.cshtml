@@ -1,0 +1,28 @@
+﻿@page
+@model Eleventh.Pages.PlaceModel
+@{
+}
+<h1>@Model.Location.Title</h1>
+<div>
+    @Html.Raw(Model.Location.Description)
+</div>
+<div>
+    <h2>Player stats</h2>
+    <p>HP: @Model.State.HP</p>
+</div>
+<ul>
+    @foreach (var c in Model.Connections)
+
+    {
+        <li>
+        @if (String.IsNullOrEmpty(c.TargetSpecialPage))
+        {
+            <a asp-page="Place" asp-route-id="@c.Target">@Html.Raw(c.Description)</a>
+        }
+        else
+        {
+        <a asp-page="@c.TargetSpecialPage" asp-route-id="@c.Target" asp-route-parameter="@c.Parameter">@Html.Raw(c.Description)</a>
+        }
+        </li>
+    }
+</ul>

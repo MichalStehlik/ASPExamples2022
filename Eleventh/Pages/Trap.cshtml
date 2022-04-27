@@ -1,0 +1,15 @@
+﻿@page
+@model Eleventh.Pages.TrapModel
+@{
+}
+<h1>Trap</h1>
+@if (Model.TrapType == 0)
+{
+    <p>You triggered a trap!</p>
+}
+else
+{
+    <p>You triggered a mouse trap!</p>
+}
+
+<div><a class="btn btn-primary" asp-page="Place" asp-route-id="@Model.ReturnRoom">Continue</a></div>
